@@ -14,8 +14,11 @@ summary(auto.lin.fit)
 
 #there appears to be a relationship between the predictor and response.
 #the relationship seems fairly strong since it has a low p value (p-value: < 2.2e-16)
-# and a low R^2 value: 0.6059
+# and a high R^2 value: 0.6059.
 
 predict(auto.lin.fit, data.frame(horsepower = 98), interval = 'confidence')
 predict(auto.lin.fit, data.frame(horsepower = 98), interval = 'prediction')
-#  24.151388 14.4938885 33.80889
+# prediction: 24.151388 min: 14.4938885 max: 33.80889
+# confidence: 24.151388 min: 23.660958 max: 24.641817
+
+
