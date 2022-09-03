@@ -1,3 +1,8 @@
+#Jacob Sauther
+#CS5565
+#assignment 1, question 10
+#Fall 2022
+
 library(ISLR2)
 
 ?Boston
