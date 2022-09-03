@@ -21,4 +21,10 @@ predict(auto.lin.fit, data.frame(horsepower = 98), interval = 'prediction')
 # prediction: 24.151388 min: 14.4938885 max: 33.80889
 # confidence: 24.151388 min: 23.660958 max: 24.641817
 
+plot(auto_data$horsepower, auto_data$mpg, xlab = "horsepower", ylab = "miles per gallon")
+abline(auto.lin.fit, lwd = 3, col = 'red')
+#the largest issues I am seeing here is that it looks like from the data that the function f
+# might actually be a quadratic function. Despite the function being pretty close to the data
+# I think it may be possible for the function to be even closer. The residuals appear to have
+# a u shape which could mean there is non-linearity with this data.
 
